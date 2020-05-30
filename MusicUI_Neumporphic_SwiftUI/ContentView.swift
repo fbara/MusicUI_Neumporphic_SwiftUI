@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack(spacing: 20) {
+            ZStack {
+                Rectangle()
+                    .fill(Color("Background"))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack(spacing: 10) {
+                    TopRow()
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
