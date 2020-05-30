@@ -20,6 +20,8 @@ struct ContentView: View {
                 VStack(spacing: 10) {
                     TopRow()
                     Spacer()
+                    AlbumView()
+                    Spacer()
                 }
             }
         }
